@@ -3,7 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 1. Charger les donnees
-df = pd.read_csv("clients.csv")
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+df = pd.read_csv(ROOT_DIR / "data" / "clients.csv")
 
 # 2. Afficher les premieres lignes
 print("\n--- APERCU DES DONNEES ---")
@@ -171,3 +174,18 @@ plt.tight_layout()
 
 plt.savefig("revenus_par_ville.png", dpi=150)
 plt.show()
+
+
+# --- 6. DEPENSES PAR VILLE ET ABONNEMENT ---
+
+print("\n--- DEPENSES PAR VILLE ET ABONNEMENT ---")
+
+spend_city_subscription = df_clean.pivot_table(
+    index="city",
+    columns="subscription",
+    values="monthly_spend",
+    aggfunc="sum",
+    fill_value=0
+)
+
+print(spend_city_subscription)
