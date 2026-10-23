@@ -1,0 +1,16 @@
+﻿client_id,age,city,subscription,monthly_spend,months_active
+C001,22,Rabat,Basic,99,3
+C002,35,Casablanca,Premium,299,12
+C003,28,Rabat,Standard,179,8
+C004,42,Tanger,Premium,349,24
+C005,31,Casablanca,Basic,89,6
+C006,26,Marrakech,Standard,159,10
+C007,45,Rabat,Premium,399,36
+C008,29,Tanger,Basic,99,5
+C009,38,Casablanca,Standard,199,18
+C010,24,Marrakech,Basic,79,2
+C011,,Rabat,Premium,299,15
+C012,33,,Standard,179,9
+C013,27,Casablanca,Basic,99,7
+C014,51,Tanger,Premium,449,30
+C014,51,Tanger,Premium,449,30
